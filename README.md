@@ -5,7 +5,7 @@
 # Aprendiendo React ⚛️
 
 Curso para aprender **React** basado en proyectos.
-**[Todos los miércoles a las 18PM en Twitch](https://twitch.tv/midudev)**
+**[Todos los miércoles a las 18PM 🇪🇸 en Twitch](https://twitch.tv/midudev)**
 </div>
 
 ## 📹 Videos con las clases
@@ -13,6 +13,9 @@ Curso para aprender **React** basado en proyectos.
 - 01: [Introducción a React](https://www.twitch.tv/videos/1704282150?filter=archives&sort=time)
 - 02: [React Hooks: useState y useEffect](https://www.twitch.tv/videos/1711159530?filter=archives&sort=time)
 - 03: [Fetching de datos y Custom Hooks](https://www.twitch.tv/videos/1718103492?filter=archives&sort=time)  
+- 04: [Prueba técnica para Trainee](https://www.twitch.tv/videos/1718103492)
+- 05: [React Hooks: useRef, useMemo, useCallback](https://www.twitch.tv/videos/1732102325?filter=archives&sort=time)
+- 06: Próximamente en https://twitch.tv/midudev
 
 ## ⌨️ Proyectos
 
@@ -20,4 +23,5 @@ Curso para aprender **React** basado en proyectos.
 - 02: [Tic Tac Toe](projects/02-tic-tac-toe/)
 - 03: [Mouse Follower](projects/03-mouse-follower)
 - 04: [Prueba técnica](projects/04-react-prueba-tecnica)
-- 05: Próximamente en https://twitch.tv/midudev
+- 05: [Prueba técnica de buscador utilizando una API](projects/05-react-buscador-peliculas)
+- 06: Próximamente en https://twitch.tv/midudev
