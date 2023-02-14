@@ -1,15 +1,14 @@
 import { useState } from 'react'
-import confetti from "canvas-confetti"
+import confetti from 'canvas-confetti'
 import './App.css'
-import { Square } from "./components/Square"
-import { TURNS } from "./constants.js"
-import { checkWinnerFrom, checkEndGame } from "./logic/board"
-import { WinnerModal } from "./components/WinnerModal"
-import { saveBoard, resetBoard } from "./logic/storage"
+import { Square } from './components/Square'
+import { TURNS } from './constants.js'
+import { checkWinnerFrom, checkEndGame } from './logic/board'
+import { WinnerModal } from './components/WinnerModal'
+import { saveBoard, resetBoard } from './logic/storage'
 
-function App() {
+function App () {
   const [board, setBoard] = useState(() => {
-    
     const boardFromStorage = window.localStorage.getItem('board')
     if (boardFromStorage) {
       const parsedBoard = JSON.parse(boardFromStorage)
@@ -35,11 +34,10 @@ function App() {
   }
 
   const updateBoard = (index) => {
-
     // TODO: Estudiar spread y rest operator en javascript
-    if (board[index] || winner) return;
+    if (board[index] || winner) return
     // Actualizar el tablero
-    const newBoard = [... board]
+    const newBoard = [...board]
     newBoard[index] = turn
     setBoard(newBoard)
     // Cambiar el turno
@@ -57,10 +55,10 @@ function App() {
       confetti()
       setWinner(newWinner)
     } else if (checkEndGame(newBoard)) {
-      setWinner(false) //empate
+      setWinner(false) // empate
     }
   }
-  
+
   return (
     <main className='board'>
       <h1>Tic tac toe</h1>
@@ -72,8 +70,9 @@ function App() {
               <Square
                 key={index}
                 index={index}
-                updateBoard={updateBoard}>
-                  {square}
+                updateBoard={updateBoard}
+              >
+                {square}
               </Square>
             )
           })
